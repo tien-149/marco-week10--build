@@ -164,7 +164,267 @@ h2, h3
   margin: 0 auto;
   max-width: 120px;
 }
+#pano {
+  background-image: url(../img/panoramic_bg_3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+}
+#infoFrost {
+  background-color: rgba(255,255,255,0.8);
+  padding: 10px 20px 0px 20px;
+  height: 270px;
+}
+#infoFrost h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#infoFrost h3 {
+  font-size: 14px;
+  letter-spacing: .25px;
+  line-height: 18px;
+}
+#infoFrost p {
+  color: #090909;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+#bookNow {
+  display: block;
+  width: 120px;
+  background-color: #8fa771;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;font-family: 'lustriaregular', Times, sans-serif;
+}
+#bookNow:hover {
+  background-color: #215445;
+}
 
+/*Services Area*/
+#serviceCon {
+  margin-bottom: 10px;
+}
+
+.icon {
+  float: left;
+  max-width: 70px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.services h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.services p {
+  color: #333;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.services a {
+  color: #8fa771;
+
+}
+.services {
+  margin-bottom: 40px;
+  padding-top: 1px; /*Collapsing margins, read up on article*/
+}
+
+/*Extra Area*/
+#extraCon {
+  margin-bottom: 60px;
+}
+.extrasImg {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.extras h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.extras p {
+  color: #333;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/*Footer*/
+#footerCon {
+  background-color: #8fa771;
+  height: 70px;
+}
+#footerNav {
+  display: none;
+}
+#backBut {
+  color: #fff;
+  font-size: 16px;
+  line-height: 70px;
+}
+#backBut:hover {
+  color: #333;
+}
+@media screen and (min-width: 400px) {
+#infoFrost h2 {
+  font-size: 24px;
+}
+#infoFrost h3 {
+  font-size: 18px;
+}
+#infoFrost p {
+  font-size:14px;
+}
+}
+
+@media screen and (min-width: 620px) {
+  #infoFrost h2 {
+    font-size: 32px;
+  }
+  #infoFrost h3 {
+    font-size: 20px;
+  }
+  #infoFrost p {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #serviceCon {
+    display: flex;
+  }
+  .services {
+    margin-right: 20px;
+  }
+  .services:last-child {
+    margin-right: 0;
+  }
+  .services h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .services h3 {
+    font-size: 10px;
+  }
+  .icon {
+    margin-right: 10px;
+    max-width: 50px;
+  }
+  .services p {
+    text-align: left;
+  }
+  #pano {
+    background-image: url(../img/panoramic_bg_2.jpg);
+  }
+  #extraCon {
+    display: flex;
+  }
+  .extras:last-child {
+    margin-left: 40px;
+  }
+  #backBut {
+    display: none;
+  }
+  #footerNav {
+    display: block;
+  }
+  #footerCon ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  #footerCon ul li a {
+    color: #fff;
+    line-height: 70px;
+  }
+  #footerCOn ul li a:hover {
+    color: #333;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #infoFrost {
+    background: url(../img/golf_club.png) right no-repeat rgba(255,255,255,0.8);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mainHeader {
+    display: flex;
+  }
+  #button {
+    display: none;
+  }
+  #burgerCon {
+    display: flex;
+    flex-direction: column;
+  }
+  #logoCon {
+    order:-1;
+  }
+  #mainNav {
+    margin-left: auto;
+  }
+  #mainNav li {
+    border-bottom: none;
+    display: inline;
+    margin-left: 20px;
+  }
+  #mainNav li:first-child {
+    border-top: none;
+  }
+  #mainNav li a {
+    display: inline;
+  }
+  #searchForm {
+    order: -1;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  #wollastonLogo {
+    max-width:160px;
+  }
+  #pano {
+    background: url(../img/panoramic_bg_1.jpg) center no-repeat;
+  }
+  .icon {
+    max-width: 70px;
+  }
+  .services h2 {
+    font-size: 24px;
+  }
+  .services h3 {
+    font-size: 18px;
+  }
+  .extrasImg {
+    max-width: 270px;
+    float: left;
+    margin-right: 20px;
+  }
+  .extras h2 {
+    margin-top: 30px;
+  }
+  #infoFrost {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+}
+  
 
 
 
